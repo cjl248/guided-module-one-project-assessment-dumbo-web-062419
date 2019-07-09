@@ -15,25 +15,34 @@ ActiveRecord::Schema.define(version: 2019_07_09_080827) do
   create_table "animals", force: :cascade do |t|
     t.string "name"
     t.integer "age"
-    t.string "breed"
     t.string "species"
-    t.string "description"
-    t.integer "sightings"
-    t.string "last_seen"
-    t.boolean "found"
+    t.string "breed"
+    t.string "fur_color"
+    t.string "eye_color"
+    t.text "description"
+    t.boolean "is_healthy"
+    t.datetime "date_last_seen"
+    t.boolean "is_found"
   end
 
   create_table "reports", force: :cascade do |t|
-    t.string "title"
-    t.string "content"
-    t.string "location"
     t.datetime "date"
+    t.string "title"
+    t.text "content"
+    t.string "sighting_suburb"
+    t.integer "confidence"
+    t.integer "user_id"
+    t.integer "animal_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "age"
-    t.string "suburb"
+    t.text "what_would_you_do"
+    t.boolean "is_alive"
+    t.integer "vision_rating"
+    t.boolean "is_animal_lover"
+    t.string "phone_number"
+    t.string "home_suburb"
   end
 
 end
