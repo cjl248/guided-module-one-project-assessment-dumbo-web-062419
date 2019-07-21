@@ -4,9 +4,9 @@ class CreateUsers < ActiveRecord::Migration[5.2]
 
   def change
     create_table :users do |t|
-      t.string :name              # User's name #
-      t.integer :vision_rating    # User's self-assigned vision rating from 1-5. #
-      t.integer :love_animals     # 0 = false; 1 = true #
+      t.string :name
+      t.integer :vision_rating
+      t.boolean :love_animals
     end
   end
 end
