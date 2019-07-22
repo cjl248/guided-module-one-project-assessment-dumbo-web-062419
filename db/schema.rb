@@ -13,25 +13,22 @@
 ActiveRecord::Schema.define(version: 2019_07_09_080827) do
 
   create_table "animals", force: :cascade do |t|
-    t.integer "age"
     t.string "eye_color"
     t.string "fur_color"
-    t.boolean "is_healthy"
+    t.string "is_healthy"
   end
 
   create_table "reports", force: :cascade do |t|
     t.integer "month"
     t.string "title"
-    t.text "content"
-    t.string "suburb"
+    t.string "city"
     t.integer "user_id"
     t.integer "animal_id"
   end
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.integer "vision_rating"
-    t.boolean "love_animals"
+    t.string "love_animals"
   end
 
 end
