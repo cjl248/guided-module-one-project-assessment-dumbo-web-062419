@@ -6,5 +6,5 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :love_animals
     end
   end
-  
+
 end

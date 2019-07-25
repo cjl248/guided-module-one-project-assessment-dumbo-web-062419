@@ -30,5 +30,5 @@ ActiveRecord::Schema.define(version: 2019_07_09_080827) do
     t.string "name"
     t.string "love_animals"
   end
-  
+
 end
