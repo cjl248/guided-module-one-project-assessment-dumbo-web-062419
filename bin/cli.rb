@@ -1,6 +1,8 @@
+#$prompt
 
+class CommandLineInterface
 
-class cli
-  
+def initialize(); end
+
 
 end
