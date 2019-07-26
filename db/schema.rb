@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_07_09_080827) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "love_animals"
+    t.string "animal_lover"
   end
 
 end

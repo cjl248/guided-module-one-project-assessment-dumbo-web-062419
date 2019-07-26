@@ -10,14 +10,14 @@ class CommandLineInterface
       session = {}
       user_name = $prompt.ask("What's your name?")
       session[:name] = user_name
-      if User.find_by(name: @customer_name) == nil
+      if User.find_by(name: user_name) == nil
         new_user(session)
       else
         old_user(session)
     end
   end
 
-  def new_user(current_session)
+  def new_user(session)
     $prompt.select("Are you an animal lover?") {
       |menu|
         menu.choice "Duh! 😍😍😍", -> {
@@ -31,16 +31,16 @@ class CommandLineInterface
       }
   end
 
-  def create_user(current_session)
-    User.create(session[:name] = name, session[:love_animals] = lover)
+  def create_user(session)
+    User.create(session[:name] = name, session[:animal_lover] = lover)
   end
 
-  def old_user(current_session)
+  def old_user(session)
     puts "Welcome back #{session[:name]}!"
     present_CRUD_options(session)
   end
 
-  def present_CRUD_options(current_session)
+  def present_CRUD_options(session)
     $prompt.select("Welcome back! What would you like to do?") {
       |menu|
         menu.choice "START A NEW REPORT", -> {"creating"}

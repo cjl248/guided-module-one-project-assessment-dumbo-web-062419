@@ -2,22 +2,22 @@
 #### USERS ####
 u1 = User.create({
   name: "mr_scroodge",
-  love_animals: "no"
+  animal_lover: "no"
   })
 
 u2 = User.create({
   name: "mr_cookie_muncher",
-  love_animals: "yes"
+  animal_lover: "yes"
   })
 
 u3 = User.create({
   name: "Jekyl n' Hyde",
-  love_animals: "no"
+  animal_lover: "no"
   })
 
 u3 = User.create({
   name: "Chris",
-  love_animals: "yes"
+  animal_lover: "yes"
   })
 
 #### ANIMALS ####
