@@ -15,6 +15,11 @@ u3 = User.create({
   love_animals: "no"
   })
 
+u3 = User.create({
+  name: "Chris",
+  love_animals: "yes"
+  })
+
 #### ANIMALS ####
 a1 = Animal.create({
   eye_color: "green",

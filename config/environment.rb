@@ -5,3 +5,4 @@ ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'db/develo
 
 require_all 'lib'
 require_relative "../bin/methods.rb"
+require_relative "../bin/cli.rb"
