@@ -9,5 +9,5 @@ class CreateReports < ActiveRecord::Migration[5.2]
       t.integer :animal_id
     end
   end
-  
+
 end

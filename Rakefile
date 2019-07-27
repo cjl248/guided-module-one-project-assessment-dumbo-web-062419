@@ -5,8 +5,10 @@ desc 'starts a console'
 task :console do
   ActiveRecord::Base.logger = Logger.new(STDOUT)
 
-  puts "------CONSOLE START---------------------"
+  puts "!------CONSOLE START---------------------------!"
+
   Pry.start
-  puts "------CONSOLE END-----------------------"
+
+  puts "!------CONSOLE END-----------------------------!"
 
 end

@@ -10,6 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+# !--------- !STEPS TO MIGRATE! --------! #
+# Step 1: set-up models and relationships
+# Step 2: rake db:create_migration
+# Step 3: rake db:migrate
+
 ActiveRecord::Schema.define(version: 2019_07_09_080827) do
 
   create_table "animals", force: :cascade do |t|
